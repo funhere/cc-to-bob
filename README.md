@@ -86,10 +86,10 @@ git clone https://github.com/funhere/cc-to-bob.git
 cd cc-to-bob
 
 # converter
-python scripts/convert.py --help
+python cc_to_bob/convert.py --help
 
 # Steps restructurer
-python scripts/restep.py --help
+python cc_to_bob/restep.py --help
 ```
 
 ### Option C — editable install for development
@@ -386,7 +386,7 @@ The suite covers:
 
 ```
 cc-to-bob/
-├── scripts/
+├── cc_to_bob/
 │   ├── __init__.py          # package, exposes __version__
 │   ├── convert.py           # cc2bob CLI — format converter
 │   └── restep.py            # cc2bob-restep CLI — Steps restructurer
@@ -420,7 +420,7 @@ cc-to-bob/
 3. Run the test suite: `python -m unittest discover tests -v`
 4. Open a pull request against `main`.
 
-Please keep `scripts/convert.py` and `scripts/restep.py` free of third-party
+Please keep `cc_to_bob/convert.py` and `cc_to_bob/restep.py` free of third-party
 dependencies — zero-dependency operation is a core design goal.
 
 ---

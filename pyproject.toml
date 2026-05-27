@@ -31,15 +31,15 @@ Repository = "https://github.com/your-org/cc-to-bob"
 Issues     = "https://github.com/your-org/cc-to-bob/issues"
 
 [project.scripts]
-cc2bob       = "scripts.convert:cli"
-cc2bob-restep = "scripts.restep:cli"
+cc2bob       = "cc_to_bob.convert:cli"
+cc2bob-restep = "cc_to_bob.restep:cli"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["scripts*"]
+include = ["cc_to_bob*"]
 
 [tool.setuptools.package-data]
-scripts = ["py.typed"]
+cc_to_bob = ["py.typed"]
 
 # ── Dev / test tooling ─────────────────────────────────────────────────────
 [tool.pytest.ini_options]
