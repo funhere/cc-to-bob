@@ -5,47 +5,42 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cc-to-bob"
 version = "0.1.0"
-description = "Convert Claude Code Skills into IBM Bob Skills"
+description = "Convert Claude Code output to IBM Bob format"
 readme = "README.md"
-license = { text = "MIT" }
-requires-python = ">=3.9"
-keywords = ["claude", "ibm", "bob", "skill", "ai-agent", "migration"]
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Environment :: Console",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Topic :: Software Development :: Code Generators",
-    "Topic :: Utilities",
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+authors = [
+  {name = "funhere"}
 ]
-dependencies = []   # zero runtime dependencies — stdlib only
+
+dependencies = [
+]
+
+keywords = [
+  "claude",
+  "ibm-bob",
+  "markdown",
+  "converter",
+  "ai-agent"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
 
 [project.urls]
-Homepage   = "https://github.com/your-org/cc-to-bob"
-Repository = "https://github.com/your-org/cc-to-bob"
-Issues     = "https://github.com/your-org/cc-to-bob/issues"
+Homepage = "https://github.com/funhere/cc-to-bob"
 
 [project.scripts]
-cc2bob       = "cc_to_bob.convert:cli"
-cc2bob-restep = "cc_to_bob.restep:cli"
+cc2bob = "cc_to_bob.cli:main"
+cc2bob-restep = "cc_to_bob.restep:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["cc_to_bob*"]
-
-[tool.setuptools.package-data]
-cc_to_bob = ["py.typed"]
-
-# ── Dev / test tooling ─────────────────────────────────────────────────────
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts   = "-v"
-
-[tool.ruff]
-line-length = 100
-target-version = "py39"
+where = ["src"]
