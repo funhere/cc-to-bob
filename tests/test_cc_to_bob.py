@@ -8,8 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
-from cc_to_bob.convert import convert_skill_md, split_front_matter, main as convert_main
-from cc_to_bob.restep import restep_markdown, restep_skill_md
+from scripts.convert import convert_skill_md, split_front_matter, main as convert_main
+from scripts.restep import restep_markdown, restep_skill_md
 
 
 def _skill(fm: str, body: str = "Some instructions.") -> str:
