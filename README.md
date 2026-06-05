@@ -162,6 +162,22 @@ cc2bob ~/.claude/skills/ -o ~/.bob/skills/ --batch --note-advanced-mode
 ```
 
 Example Output (Bulk Import of 52 Skills)
+```bash
+$ cc2bob ~/.claude/skills/gstack -o .bob/skills --batch 
+
+converted: autoplan -> .bob/skills/autoplan  (+1 files)  [moved to body: preamble-tier, version, benefits-from, triggers, allowed-tools]
+converted: benchmark -> .bob/skills/benchmark  (+1 files)  [moved to body: preamble-tier, version, triggers, allowed-tools]
+converted: benchmark-models -> .bob/skills/benchmark-models  (+1 files)  [moved to body: preamble-tier, version, triggers, allowed-tools]
+converted: browse -> .bob/skills/browse  (+211 files)  [moved to body: preamble-tier, version, triggers, allowed-tools]
+converted: canary -> .bob/skills/canary  (+1 files)  [moved to body: preamble-tier, version, allowed-tools, triggers]
+converted: careful -> .bob/skills/careful  (+2 files)  [moved to body: version, triggers, allowed-tools, hooks]
+converted: codex -> .bob/skills/codex  (+1 files)  [moved to body: preamble-tier, version, triggers, allowed-tools]
+converted: open-gstack-browser -> .bob/skills/connect-chrome  (+1 files)  [moved to body: version, triggers, allowed-tools]
+converted: context-restore -> .bob/skills/context-restore  (+1 files)  [moved to body: preamble-tier, version, allowed-tools, triggers]
+converted: context-save -> .bob/skills/context-save  (+1 files)  [moved to body: preamble-tier, version, allowed-tools, triggers]
+converted: cso -> .bob/skills/cso  (+2 files)  [moved to body: preamble-tier, version, allowed-tools, triggers]
+......
+
 <img width="3370" height="1560" alt="cc2bob_2" src="https://github.com/user-attachments/assets/644c415d-b231-4c7c-8a78-6a80f1b35ac4" />
 
 <img width="2392" height="1934" alt="cc2bob_3" src="https://github.com/user-attachments/assets/aabd6904-e876-4b48-ad8e-95a4d9f31f2a" />
