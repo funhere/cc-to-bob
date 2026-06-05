@@ -161,6 +161,12 @@ cc2bob ./my-skill/ -o ./bob-skills/ --flatten
 cc2bob ~/.claude/skills/ -o ~/.bob/skills/ --batch --note-advanced-mode
 ```
 
+Example Output (Bulk Import of 52 Skills)
+<img width="3370" height="1560" alt="cc2bob_2" src="https://github.com/user-attachments/assets/644c415d-b231-4c7c-8a78-6a80f1b35ac4" />
+
+<img width="2392" height="1934" alt="cc2bob_3" src="https://github.com/user-attachments/assets/aabd6904-e876-4b48-ad8e-95a4d9f31f2a" />
+
+
 ### What happens to extra front-matter keys?
 
 Claude Code skills often carry metadata that Bob doesn't recognise:
