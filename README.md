@@ -1,5 +1,7 @@
 # cc-to-bob
 
+日本語版: [日本語はこちら](README.ja.md)
+
 **Convert [Claude Code](https://claude.ai/code) Skills into [IBM Bob](https://bob.ibm.com) Skills.**
 
 Claude Code and IBM Bob both use a `SKILL.md`-based skill format, but differ in
